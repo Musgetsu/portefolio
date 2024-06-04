@@ -28,7 +28,6 @@ header h1 {
     margin: 0 auto;
     padding: 2em 0;
     padding-top: 80px;
-    /* Ajoutez une marge supérieure pour compenser la hauteur du header */
 
 }
 
@@ -40,19 +39,13 @@ h2 {
 .profile-pic {
     display: block;
     margin: 80px auto 0 auto;
-    /* Ajouter une marge supérieure pour éviter le chevauchement */
     border-radius: 50%;
     width: 100%;
-    /* Modifiez la largeur */
     max-width: 500px;
-    /* Définissez une largeur maximale */
     height: auto;
     transition: all 0.3s ease-in-out;
-    /* Ajoutez une transition fluide */
     position: relative;
-    /* Nécessaire pour l'animation de défilement */
     z-index: 999;
-    /* Assurez-vous qu'il reste au-dessus du contenu */
 }
 
 .about,
@@ -61,7 +54,7 @@ h2 {
     margin-bottom: 2em;
 }
 
-.projects {
+.projects { 
     text-align: center;
 }
 
@@ -136,7 +129,7 @@ footer {
     background-color: #000;
 }
 
-.theme-toggle-btn {
+.theme-toggle-btn { /* boutton de bascule du mode sombre */   
     position: fixed;
     top: 1em;
     right: 1em;
@@ -148,7 +141,7 @@ footer {
     height: 30px;
     border-radius: 15px;
     transition: background-color 0.3s, border-color 0.3s;
-    z-index: 1001; /* Assurer que le bouton reste au-dessus du header */
+    z-index: 1001; 
 }
 
 .theme-toggle-btn::after {
@@ -175,7 +168,7 @@ footer {
     transition: transform 0.3s, background-color 0.3s;
 }
 
-.dark-mode .theme-toggle-btn {
+.dark-mode .theme-toggle-btn { 
     background-color: green;
     border-color: #555;
 }
