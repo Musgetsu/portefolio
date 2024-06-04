@@ -7,201 +7,9 @@
     <title>Mon Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
         rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            transition: background-color 0.3s, color 0.3s;
-        }
+        <link href="./css/style.css" rel="stylesheet">
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
 
-        header h1 {
-            font-family: 'Merriweather', serif;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 2em 0;
-            padding-top: 80px;
-            /* Ajoutez une marge supérieure pour compenser la hauteur du header */
-
-        }
-
-        h2 {
-            text-align: center;
-            font-family: 'Merriweather', serif;
-        }
-
-        .profile-pic {
-            display: block;
-            margin: 80px auto 0 auto;
-            /* Ajouter une marge supérieure pour éviter le chevauchement */
-            border-radius: 50%;
-            width: 100%;
-            /* Modifiez la largeur */
-            max-width: 500px;
-            /* Définissez une largeur maximale */
-            height: auto;
-            transition: all 0.3s ease-in-out;
-            /* Ajoutez une transition fluide */
-            position: relative;
-            /* Nécessaire pour l'animation de défilement */
-            z-index: 999;
-            /* Assurez-vous qu'il reste au-dessus du contenu */
-        }
-
-        .about,
-        .projects,
-        .contact {
-            margin-bottom: 2em;
-        }
-
-        .projects {
-            text-align: center;
-        }
-
-        .projects img {
-            width: 100%;
-            height: auto;
-            max-width: 300px;
-            filter: blur(5px);
-            /* Appliquer le flou */
-            transition: filter 0.3s ease, transform 0.3s ease;
-            /* Ajouter une transition fluide */
-        }
-
-        .projects img:hover {
-            filter: blur(0);
-            /* Enlever le flou au survol */
-            transform: scale(1.1);
-            /* Grossir l'image au survol */
-        }
-
-        .projects .project {
-            display: inline-block;
-            margin: 1em;
-        }
-
-        .contact form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .contact form label,
-        .contact form input,
-        .contact form textarea {
-            width: 100%;
-            max-width: 400px;
-            margin-bottom: 10px;
-        }
-
-        .contact form input,
-        .contact form textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact form input[type="submit"] {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .contact form input[type="submit"]:hover {
-            background-color: #555;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        .dark-mode {
-            background-color: #333;
-            color: #f4f4f4;
-        }
-
-        .dark-mode header,
-        .dark-mode footer {
-            background-color: #000;
-        }
-
-        .theme-toggle-btn {
-            position: fixed;
-            top: 1em;
-            right: 1em;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 0.5em;
-            cursor: pointer;
-            width: 50px;
-            height: 30px;
-            border-radius: 15px;
-            transition: background-color 0.3s, border-color 0.3s;
-            z-index: 1001; /* Assurer que le bouton reste au-dessus du header */
-        }
-
-        .theme-toggle-btn::after {
-            content: "";
-            position: absolute;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background-color: #fff;
-            top: 50%;
-            transform: translate(-20px, -50%);
-            transition: transform 0.3s, background-color 0.3s;
-        }
-
-        .theme-toggle-btn::before {
-            content: "";
-            position: absolute;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background-color: #333;
-            top: 50%;
-            transform: translate(-20px, -50%);
-            transition: transform 0.3s, background-color 0.3s;
-        }
-
-        .dark-mode .theme-toggle-btn {
-            background-color: green;
-            border-color: #555;
-        }
-
-        .dark-mode .theme-toggle-btn::after {
-            background-color: transparent;
-            transform: translateY(-50%);
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .dark-mode .theme-toggle-btn::before {
-            background-color: #333;
-            transform: translateY(-50%);
-        }
-    </style>
 </head>
 
 <body>
@@ -241,7 +49,6 @@
                 <img src="./img/proj3.jpg" alt="Projet 3">
                 <p>Mise en place d'un serveur Palworld sous linux (debian distribution -> Ubuntu) avec un script permetant de vérifier l'utilisation de la RAM et d'agir en cas d'utilisation anormal (création de Backup) </p>
             </div>
-            <!-- Ajoute plus de projets si nécessaire -->
         </section>
         <section id="contact" class="contact">
             <h2>Contact</h2>
@@ -261,66 +68,14 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Rohan MARTIN porte-folio. Tous droits réservés.</p>
+        <p>&copy; 2024 Rohan MARTIN porte-folio. Tous droits réservés.</p>  
+      <p>Le style du portfolio a été créé avec l'aide d'une intelligence artificielle.</p>
+
+
     </footer>
 
     <button class="theme-toggle-btn" onclick="toggleTheme()"></button>
-    <script>
-        function applyPreferredTheme() {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.body.classList.add('dark-mode');
-            }
-        }
-
-        // Fonction pour basculer entre les thèmes clair et sombre
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-        }
-
-        // Appliquer le thème préféré au chargement de la page
-        applyPreferredTheme();
-        let isResized = false;
-        let profilePic = document.querySelector('.profile-pic');
-
-        function resizeImage() {
-            let scrollPosition = window.scrollY;
-
-            // Si la taille de l'image n'a pas encore été réduite et si le défilement est vers le bas
-            if (!isResized && scrollPosition > 0) {
-                profilePic.style.width = '250px'; // Réduire la taille de l'image
-                isResized = true; // Marquer comme redimensionné
-            }
-            
-
-            // Si la taille de l'image a été réduite et si le défilement est vers le haut
-            if (isResized && scrollPosition === 0) {
-                profilePic.style.width = '500px'; // Restaurer la taille initiale de l'image
-                isResized = false; // Marquer comme non redimensionné
-            }
-        }
-
-        window.addEventListener('scroll', resizeImage);
-        // Fonction pour déplacer la position de défilement pour compenser la hauteur du header
-function adjustScrollPosition() {
-    const headerHeight = document.querySelector('header').offsetHeight; // Hauteur du header
-    const hash = window.location.hash; // Obtient l'ancre dans l'URL
-
-    // Si une ancre est spécifiée dans l'URL et qu'elle correspond à une section avec un ID, ajustez la position de défilement
-    if (hash && document.querySelector(hash)) {
-        window.scrollTo(0, document.querySelector(hash).offsetTop - headerHeight);
-    }
-}
-
-// Appeler la fonction d'ajustement de la position de défilement lorsque la page est entièrement chargée
-window.addEventListener('load', adjustScrollPosition);
-
-// Appeler la fonction d'ajustement de la position de défilement lorsqu'un lien de navigation est cliqué
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', () => {
-        setTimeout(adjustScrollPosition, 0); // Utiliser setTimeout pour s'assurer que le défilement est ajusté après la navigation
-    });
-});
-    </script>
+<script scr="./js/script.js"></script>
 </body>
 
 </html>
